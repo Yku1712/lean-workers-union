@@ -3,3 +3,6 @@
 site-out/
 
 site/
+lean-cli/lakefile.toml
+lean-cli/lake-manifest.json
+lean-cli/.lake/

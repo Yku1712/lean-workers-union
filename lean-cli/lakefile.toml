@@ -1,16 +1,5 @@
 name = "lean-workers-cli"
 version = "0.1.0"
-description = "Lean CLI for building and managing the Lean Workers Union static site"
-requires = ["lake", "lakefmt"]
-
-[tool.lake]
-branch = "main"
-
-[tool.lake.executables]
-lean = "lean"
-
-[tool.lake.packages]
-lean-workers-union = { path = "../" }
 
 [[lean_exe]]
 name = "lean-workers-cli"
