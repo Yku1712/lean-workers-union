@@ -11,3 +11,7 @@ lean = "lean"
 
 [tool.lake.packages]
 lean-workers-union = { path = "../" }
+
+[[lean_exe]]
+name = "lean-workers-cli"
+root = "src/main.lean"
