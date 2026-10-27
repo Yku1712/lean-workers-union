@@ -55,8 +55,9 @@ def witnessAllows (condition : GateCondition) (receipt : Receipt) : Bool :=
     
     This is a pure function: Bool. It does not perform I/O, environment inspection,
     or verify anything external. It only validates the structural consistency
-    of the data. Every value it compares is supplied by the receipt's producer, so a
-    passing result is a local gate check, not independent kernel verification.
+   of the data. The receipt fields are producer-supplied and are compared
+against trusted local gate conditions. Passing this gate checks local
+consistency; it does not establish independent kernel verification.
     
     For actual evidence, the evaluating code must (none of this is provided by this
     package):
